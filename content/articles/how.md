@@ -16,13 +16,13 @@ Self-hosted [MicroK8s](https://microk8s.io/) on 3+ off-the-shelf Ubuntu boxes
 
 Run anything from:
 
-- [Home Assistant](https://www.home-assistant.io/)
-  - especially interested in [Almond](https://almond.stanford.edu/)
-- [Cloud Native Computing Foundation](https://www.cncf.io/)
-- [Docker Hub](https://hub.docker.com/)
-- [Sandstorm App Market](https://apps.sandstorm.io/)
-- maybe any VM image via [KubeVirt](https://kubevirt.io/) - still need to convince myself of this one
-- [Golem Network](https://golem.network/) and similar blockchainy stuff
+- [Home Assistant](https://www.home-assistant.io/) for home IoT automation
+  - especially [Almond](https://almond.stanford.edu/)—a privacy-preserving virtual assistant
+- [Cloud Native Computing Foundation](https://www.cncf.io/) for infra validated by hyperscalers, scaled down to personal use
+- [Docker Hub](https://hub.docker.com/) for dockerized applications
+- [Sandstorm App Market](https://apps.sandstorm.io/) for data-centric collaborative apps
+- maybe VM images via [KubeVirt](https://kubevirt.io/)
+- [Golem Network](https://golem.network/) and similar blockchainy stuff for decentralized distributed resource sharing
 
 ## Hardened Home Security
 
@@ -30,4 +30,9 @@ Run anything from:
 
 ## Automation
 
-- [ ] Shall set you free
+- [Ansible](https://docs.ansible.com/ansible/latest/index.html) for configuration and deployment automation
+- [MAAS](https://maas.io/) for easy bootstrapping of new bare metal machines
+
+- [undefined](undefined)
+
+[[undefined]]

@@ -14,4 +14,7 @@ Self-hosted tech to nurture sovereign digital living.
 
 Like any tech, this is intermediary, until say blockchains take over, or something else we haven't invented.
 
-[How](how)
+
+## Read Next
+
+- [How](how)
