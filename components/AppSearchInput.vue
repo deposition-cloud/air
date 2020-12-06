@@ -12,7 +12,7 @@ export default {
         this.articles = []
         return
       }
-      this.articles = await this.$content('articles')
+      this.articles = await this.$content('wiki')
         .limit(6)
         .search(searchQuery)
         .fetch()

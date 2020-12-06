@@ -5,24 +5,13 @@
         <vuetify-logo />
       </div>
       <v-card>
-        <v-card-title class="headline"> Cloud Wiki </v-card-title>
+        <v-card-title class="headline"> The Personal Cloud </v-card-title>
         <v-card-text>
-          <ul>
-            <li v-for="article of articles" :key="article.slug">
-              <NuxtLink :to="{ name: 'slug', params: { slug: article.slug } }">
-                <img :src="article.img" />
-                <div>
-                  <h2>{{ article.title }}</h2>
-                  <p>by {{ article.author.name }}</p>
-                  <p>{{ article.description }}</p>
-                </div>
-              </NuxtLink>
-            </li>
-          </ul>
+          <p>A breath of fresh air</p>
         </v-card-text>
         <v-card-actions>
           <v-spacer />
-          <v-btn color="primary" nuxt to="/inspire"> Next </v-btn>
+          <v-btn color="primary" nuxt to="/wiki"> Explore the Wiki </v-btn>
         </v-card-actions>
       </v-card>
     </v-col>
@@ -33,16 +22,6 @@
 import Logo from '~/components/Logo.vue'
 
 export default {
-  components: {},
-  async asyncData({ $content, params }) {
-    const articles = await $content('articles', params.slug)
-      .only(['title', 'description', 'img', 'slug', 'author'])
-      .sortBy('createdAt', 'asc')
-      .fetch()
-
-    return {
-      articles,
-    }
-  },
+  components: {}
 }
 </script>

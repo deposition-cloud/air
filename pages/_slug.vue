@@ -1,9 +1,9 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const article = await $content('articles', params.slug).fetch()
+    const article = await $content('wiki', params.slug).fetch()
 
-    const [prev, next] = await $content('articles')
+    const [prev, next] = await $content('wiki')
       .only(['title', 'slug'])
       .sortBy('createdAt', 'asc')
       .surround(params.slug)
@@ -26,7 +26,6 @@ export default {
 
 <template>
   <article>
-    <AppSearchInput />
     <nav>
       <ul>
         <li
