@@ -10,20 +10,21 @@ author:
 ---
 # Personal
 
-Because your tools should be under your control, and not spy on you.
+Because tools—like your hands—should be under your control, and not spy on and attack you.
 
 ## Cloud
 
-If we can play-test more-than-one-machine computation power before it gets compressed to smartphone size, we can literally see and experiment with what's coming.
-
-Ready to invent the future.
+Gain experience with powerful cloud technology before it gets compressed to smartphone size. #futureproof
 
 ## Physical
 
-Humans are notoriously bad at safeguarding their digital secrets, better to rely on centuries of castles, moats, dungeons, borders, and physical safes to protect our data, and therefore our digital identity.
+Humans are notoriously bad at safeguarding their digital secrets.
 
-New to privacy online? Start with [Can I use a VPN with Tor?](https://support.torproject.org/faq/faq-5/) to get a sense how complicated things can get…
+It is a much better strategy to rely on centuries of castles, moats, fences, and metal locks to protect your physical hardware and the data on it. [^1]
 
-## Read Next
+New to privacy and anonymity online? Start with the [Tor Anonymity and Privacy synthesis](https://trac.torproject.org/projects/tor/wiki/doc/TorPlusVPN) to get a sense of how complicated things get…
 
-- [What](what)
+The moment you connect your personal cloud to the internet, you become a target. [^2]
+
+[^1]: 📺[Bitcoin Q&A: Hardware Wallets and Attack Surface](https://www.youtube.com/watch?v=8mpDcBfNA7g)
+[^2]: 📖[Threat Modelling](https://www.geeksforgeeks.org/threat-modelling/)
