@@ -1,1 +1,6 @@
 .obsidian/
+info.json
+.sync/
+.lock/
+.resource/
+_resources/

@@ -1,13 +1,3 @@
-<script>
-export default {
-  props: {
-    author: {
-      type: Object,
-      required: true,
-    },
-  },
-}
-</script>
 <template>
   <NuxtLink :to="`/author/${author.name}`">
     <img :src="author.img" />
@@ -18,3 +8,15 @@ export default {
     </div>
   </NuxtLink>
 </template>
+
+<script>
+export default {
+  props: {
+    author: {
+      type: Object,
+      required: true,
+    },
+  },
+}
+</script>
+

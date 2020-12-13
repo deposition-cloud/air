@@ -1,29 +1,3 @@
-<script>
-export default {
-  async asyncData({ $content, params }) {
-    const article = await $content('wiki', params.slug).fetch()
-
-    const [prev, next] = await $content('wiki')
-      .only(['title', 'slug'])
-      .sortBy('createdAt', 'asc')
-      .surround(params.slug)
-      .fetch()
-
-    return {
-      article,
-      prev,
-      next,
-    }
-  },
-  methods: {
-    formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
-    },
-  },
-}
-</script>
-
 <template>
   <article>
     <nav>
@@ -40,16 +14,30 @@ export default {
     <h1>{{ article.title }}</h1>
     <p>{{ article.description }}</p>
     <img :src="article.img" :alt="article.alt" />
-    <p>Article last updated: {{ formatDate(article.updatedAt) }}</p>
+    <p>Article last updated: {{ article.updatedAt }}</p>
 
     <nuxt-content :document="article" />
 
     <author :author="article.author" />
-
-    <prev-next :prev="prev" :next="next" />
-    <!-- <pre> {{ article }} </pre> -->
   </article>
 </template>
+
+<script>
+export default {
+  async asyncData ({ $content, app, params, error }) {
+    const path = `/${params.pathMatch || 'index'}`
+    const [article] = await $content({ deep: true }).where({ path }).fetch()
+
+    if (!article) {
+      return error({ statusCode: 404, message: 'Article not found' })
+    }
+
+    return {
+      article
+    }
+  }
+}
+</script>
 
 <style>
 .nuxt-content h2 {
