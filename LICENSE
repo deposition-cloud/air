@@ -1,10 +1,9 @@
 ---
-title: Atmosphere Software License 
+title: Atmosphere Software License
 description: Atmosphere Software License Version 0.4–🚪🌳🔌⛅🛂💸
 author:
   name: Atmosphere Software License
   bio: Atmosphere Software License Version 0.4–🚪🌳🔌⛅🛂💸
-  image: http://lorempixel.com/g/400/200/
 ---
 
 Atmosphere Software License Version 0.4–🚪🌳🔌⛅🛂💸
@@ -12,7 +11,7 @@ Atmosphere Software License Version 0.4–🚪🌳🔌⛅🛂💸
 
 ### Preamble
 
-Software developers cannot ignore the impact of networked computation on the global climate crisis. The energy demands of the global economy exceed the current production of renewable energy. While software development has the potential to make economic activity far more efficient, fossil fuel's high subsidies and disastrous social costs mean that improvements to software often give their users the ability to optimize for financial profit at the expense of the environment, by increasing their fossil fuel extraction and polluting activities. This [rebound effect](https://en.wikipedia.org/wiki/Rebound_effect_(conservation)) has been worsened by the rise of cryptocurrency, which has made it possible to monetize computation roughly in proportion to the amount of energy consumed. Computation, energy, economics, and ecology are now locked in a harmful cycle. The purpose of the Atmosphere License is to let developers push back against this cycle, supporting environmental sustainabiliy by creating code that increases the relative economic value of renewable energy.
+Software developers cannot ignore the impact of networked computation on the global climate crisis. The energy demands of the global economy exceed the current production of renewable energy. While software development has the potential to make economic activity far more efficient, fossil fuel's high subsidies and disastrous social costs mean that improvements to software often give their users the ability to optimize for financial profit at the expense of the environment, by increasing their fossil fuel extraction and polluting activities. This [rebound effect](https://en.wikipedia.org/wiki/Rebound_effect_(conservation)) has been worsened by the rise of cryptocurrency, which has made it possible to monetize computation roughly in proportion to the amount of energy consumed. Computation, energy, economics, and ecology are now locked in a harmful cycle. The purpose of the Atmosphere License is to let developers push back against this cycle, supporting environmental sustainability by creating code that increases the relative economic value of renewable energy.
 
 Developers often release their software under open licenses out of a charitable impulse to help users accomplish their tasks more easily. The Atmosphere License acknowledges that if a contribution to open source helps its users to worsen the climate crisis and endanger the ecosystem that everyone depends on to survive, then the contribution is not effective altruism. The pursuit of open source software users' freedom must respect the physical safety of all stakeholders, including the users and the developers themselves.
 

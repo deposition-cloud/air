@@ -15,8 +15,8 @@
         <v-card-text>
           <ul>
             <li v-for="article of articles" :key="article.slug">
-              <NuxtLink :to="{ name: 'slug', params: { slug: article.slug } }">
-                <img :src="article.img" />
+              <NuxtLink :to="article">
+                <img v-if="article.img" :src="article.img" />
                 <div>
                   <h2>{{ article.title }}</h2>
                   <p>{{ article.description }}</p>
@@ -38,15 +38,15 @@ import Logo from '~/components/Logo.vue'
 
 export default {
   components: {},
-  async asyncData({ $content, params }) {
-    const articles = await $content('wiki', params.slug)
+  async asyncData ({ $content, app, params, error }) {
+    const articles = await $content({ deep: true })
       .only(['title', 'description', 'slug'])
       .sortBy('createdAt', 'asc')
       .fetch()
 
     return {
-      articles,
+      articles
     }
-  },
+  }
 }
 </script>
