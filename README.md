@@ -19,14 +19,14 @@ git clone git@github.com:deposition-cloud/air.git --origin github
 git remote add gitlab git@gitlab.com:deposition.cloud/apps/air.git
 ```
 
-We can do this because git is a *distributed* version control system, whereas GitHub and GitLab are value-added SaaS that enable Pull Request-based workflows and other useful stuff like GitLab-CI pipelines.
-
-Or
+Or, should you prefer GitLab to be the default remote:
 
 ```sh
 git clone git@gitlab.com:deposition.cloud/apps/air.git --origin gitlab
 git remote add github git@github.com:deposition-cloud/air.git
 ```
+
+We can do this because git is a *distributed* version control system, whereas GitHub and GitLab are value-added SaaS that enable [Pull Request](https://guides.github.com/introduction/flow/)-based workflows and other useful stuff like [GitLab CI/CD](https://docs.gitlab.com/ee/ci/yaml/) pipelines.
 
 TODO: add self-hosted git option
 
@@ -65,4 +65,4 @@ For detailed explanations on how things work, consult the [Nuxt.js docs](https:/
 
 Ethically sourced under the [Atmosphere License](https://www.open-austin.org/atmosphere-license/)—like open source, for good.
 
-[^1] it helps to be hands on with interoperability between SaaS providers, hence working with multiple developer communities is in and of itself an exercise in depositing the cloud
+[^1] being hands-on with interoperability between SaaS providers, which means working with multiple developer communities, is in and of itself an exercise in depositing the cloud
